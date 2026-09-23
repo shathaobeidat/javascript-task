@@ -111,7 +111,6 @@ function banknotes(amount, notes) {
 }
 
 console.log(banknotes(57, [25, 10, 5, 1]));
-//8
 function countCharacter(str, char) {
     let count = 0;
 
