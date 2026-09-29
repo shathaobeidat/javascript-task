@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Management System</title>
+    <style>
+        input{
+            margin:6px;
+        }
+    </style>
+</head>
+<body >
+
+    <h2> Employee Management System</h2>
+
+   
+    <form id="empForm">
+        <label for="#name"> employee name :</label>
+        <input type="text" id="name" placeholder="employee name" required>
+        <br>
+                <label for="#email"> employee email :</label>
+        <input type="email" id="email"  placeholder="employee email" required>
+        <br>
+                <label for="department"> employee department :</label>
+      <input type="text" id="department" placeholder="employee department" required>
+      <br>
+        <button type="button" id="submitbtn">submit</button>
+    </form>
+
+   
+    <table border="1">
+        <thead>
+            <tr>
+           <th>name</th>
+           <th> email</th>
+           <th> department</th>
+           <th> salary</th>
+            </tr>
+        </thead>
+        <tbody id="employeeTableBody"></tbody>
+        <tfoot>
+            <tr class="total">
+               <td colspan="3"> total salary :</td>
+                <td id="totalSalary">$0</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="script.js"></script>
+    </body>
+    </html>
